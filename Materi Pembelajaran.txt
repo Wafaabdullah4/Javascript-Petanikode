@@ -1,0 +1,58 @@
+1. Mengenal Javascript
+ Ada 3 Penulisan pada javascript
+ 1. Embed ituu dalam satu file atau menempelkan embed pada HTML
+ 2. inline script berada di dalam tag HTML
+ 3. ekternal script membuat file baru
+ Pelajaran pertama dianggap sudah selesai dan juga tuntas
+ (cek kode pelajaran pertama di hello.word.html)
+
+2. Menulis Javascript Di HTML
+    ada 4 cara penulisan javascript pada html
+    1. Menulis Javascript pada tag script
+    (Penulisan di akhir body akan meningkantkan kecepatan display atau tampilannya dikonten web
+    jadi disarankan menulis kode javascript di dalam body lebih tepatnya sebelum penutup body)
+    2. Menulis Javascript pada file Eksternal
+    3. Menulis Javascript pada Atribut (biasanya dilakukan pada atribut event)
+    4. Penulisan Javascript Pada URL tapi ini jarang digunakan dan juga tidak disarankan
+    (Untuk contoh mmateri 2 terdapat di file hello word)
+
+
+3. Fungsi Output di Javascript
+    ada 4 cara menampilkan output pada javascript
+    1. console.log(), console.error(), console.debug(), console.info(), console.dir;
+    2. alert();
+    3. write();
+    4. innerhtml;
+    (Untuk Materi ini ada di tampilkan_output.html)
+
+4. Variabel dan Tipe Data
+    Ada 4 cara kita menuliskan variable di javascript
+    1. var 
+    2. let
+    3. const
+    4. langsung menyebutkan variable
+
+    ada beberapa tipe data yang ada di javascript tapi sekarang kita hanya membahasnya 5
+    1. string
+    2. Integer atau Number (bilangan bulat)
+    3. Float (bilangna pecahan)
+    4. Boolean
+    5. Object 
+    untuk Materi ini ada di belajar-variable.html
+
+5. Jendela Dialog untuk Input
+    Ada 3 jendela dialog pada javascript
+    1. alert() Digunakan jika ingin menampilkan sebuah informasi saja
+    2. confirm() digunakan jika meminta konfirmasi dari user
+    3. prompt() digunakan untuk mengambil data dari user
+    
+6. Operator
+7. Percabangan
+8. Perulangan
+9. Struktur Data Array
+10. Fungsi Javascript
+11. Objek di Javascript
+12. Mengenal Dom untuk Manipulasi HTML
+13. Menggunakan objek Math
+14. Menggunakan Ajax
+15. Memahami Event di javascript

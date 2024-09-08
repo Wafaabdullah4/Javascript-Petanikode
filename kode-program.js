@@ -1,0 +1,1 @@
+document.getElementById('demo').innerHTML = "Tutorial menjadi sepuh javascript, ini kita lagi proses :)";

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <center>
+      <div class="mt-2">
+        <div class="container">
+          <div class="form-group">
+            <label for="" class="form-group">Nama: </label>
+            <input type="text" id="nama" placeholder="Masukan Nama lengkap" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="">email :</label>
+            <input type="email" id="email" placeholder="masukan email" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="">password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="masukan password"
+              min="8"
+            />
+          </div>
+          <div class="form-group mt-2">
+            <button class="btn btn-primary" onclick="registrasi()">
+              Registrasi
+            </button>
+          </div>
+          <p class="mt3" id="message"></p>
+        </div>
+      </div>
+    </center>
+
+    <script>
+      function registrasi() {
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var message = document.getElementById("message");
+
+        if (password.length < 8) {
+          message.textContent =
+            "password harus terdiri dari minilai 8 karakter";
+          message.style.color = "red";
+          return;
+        }
+
+        var register = confirm(
+          "Apakah anda yakin dengan data ini ?" +
+            "\n nama : " +
+            nama +
+            "\nemail : " +
+            email +
+            "\npassword :" +
+            password
+        );
+
+        if (register) {
+          message.innerHTML =
+            "Selamat akun atas nama " + nama + " Sudah Terdaftar";
+          message.style.color = "blue";
+
+          // Reset form
+          document.getElementById("nama").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("password").value = "";
+
+          //   document.getElementById('nama').value = '';
+          //        document.getElementbyId('email').value = '';
+          //         document.getElementById('password').value = '';
+        } else {
+          alert("akun anda sudah ada yang punya emailnya" + email);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jendela Dialog Javascript</title>
+  </head>
+  <body>
+    <!-- Dialog menggunakan alert -->
+    <button onclick="alert('Hallo ini contoh menggunakan alert')">
+      Ini jendela menggunakan alert sebagai informasi !!
+    </button>
+
+    <!-- Dialog menggunakan confirm -->
+    <br /><br />
+    <button onclick="loveyou()">Cinta</button>
+    <script>
+      function loveyou() {
+        var love = confirm("Aku suka kamuuuu lohh");
+        if (love) {
+          var benar = "akuu jugaa suka kamuuu";
+          // Dialog menggunakan promt
+          var nama = prompt(benar + "  \nNama akuu ", " ");
+          console.log(nama);
+          if ((nama = "Haifazahra Irawan")) {
+            alert("Disetujui " + nama + " Menjadi Istri Aku");
+          } else {
+            alert("Disetujui juga jadi istri aku");
+          }
+        } else {
+          alert("maaf sebelumnya....., tapi boong aku juga suka kamu da wleee");
+        }
+      }
+
+      console.log(new Date());
+      console.log(navigator.appName);
+    </script>
+    <br />
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <input type="text" id="operasi" />
+    <button onclick="hitung()">Submit</button>
+
+    <script>
+      function hitung() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var operasi = document.getElementById("operasi").value;
+
+        if (operasi === "+") {
+          let hasil = num1 + num2;
+          console.log(hasil); // Atau tampilkan hasilnya dengan cara lain
+        } else if (operasi === "-") {
+          let hasil = num1 - num2;
+          console.log(hasil);
+        } else {
+          console.log("Operasi tidak dikenali");
+        }
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+Setelah mempelajari 5 materi sebelumnya di hari ini
+saya berlatih studi kasus seperti ini
+
+1.. Studi Kasus: Sistem Registrasi Pengguna Sederhana
+Deskripsi: Anda diminta untuk membuat halaman web yang memungkinkan pengguna mendaftar dengan memasukkan nama, email, dan kata sandi 
+mereka. Setelah pengguna mengklik tombol "Daftar", informasi tersebut akan disimpan dalam variabel, 
+dan pesan konfirmasi akan ditampilkan di halaman.
+
+2. Studi Kasus: Menghitung Rata-Rata Nilai Siswa
+Deskripsi: Anda diminta untuk membuat halaman web yang dapat menghitung rata-rata nilai dari tiga mata pelajaran 
+yang dimasukkan oleh pengguna. Setelah pengguna mengklik tombol "Hitung Rata-Rata",
+ hasilnya akan ditampilkan di halaman, dan pesan tambahan akan muncul jika rata-rata di bawah 70.
+
+Fokus Konsep:
+
+Fungsi perhitungan
+Kondisi (if-else)
+Penggunaan operator matematika
+
+3.  Studi Kasus: Simulasi Sederhana Lampu Lalu Lintas
+Deskripsi: Anda diminta untuk membuat halaman web yang mensimulasikan lampu lalu lintas sederhana dengan tiga warna: merah, kuning, dan hijau.
+Pengguna dapat mengklik tombol untuk mengubah warna lampu sesuai urutan: merah -> kuning -> hijau -> kembali ke merah.
+
+Fokus Konsep:
+
+Manipulasi CSS menggunakan JavaScript
+Penggunaan event listener
+Implementasi logika siklus
+
+4. Studi Kasus: Penghitung Mundur Sederhana
+Deskripsi: Anda diminta untuk membuat halaman web yang menampilkan penghitung mundur dari 10 ke 0. Ketika hitungan mencapai 0, sebuah pesan “Waktu habis!” akan muncul. Pengguna juga bisa memulai ulang penghitung menggunakan sebuah tombol.
+Fokus Konsep:
+
+Penggunaan setInterval atau setTimeout
+Manipulasi DOM secara dinamis
+Kontrol alur program
+
+5. Studi Kasus: Menghitung Usia Berdasarkan Tanggal Lahir
+Deskripsi: Anda diminta untuk membuat halaman web yang menghitung usia pengguna berdasarkan tanggal lahir yang mereka masukkan. Setelah pengguna memasukkan tanggal lahir dan mengklik tombol "Hitung Usia", usia mereka dalam tahun akan ditampilkan di halaman.
+Fokus Konsep:
+
+Manipulasi tanggal dan waktu dengan JavaScript
+Penggunaan fungsi untuk perhitungan
+Menampilkan hasil di halaman web

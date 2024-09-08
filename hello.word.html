@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Word Javascript</title>
+</head>
+<body>
+    <script>
+        console.log("Saya sedang belajar javascript");
+        document.writeln("Hello Word");
+    </script>
+
+    <!-- contoh penulisan embed -->
+     <p>Hello!! JS sangat mudah</p>
+     <script>
+        console.log("Javascript mudah");
+     </script>
+
+     <!-- contoh penulisan inline -->
+      <a href="" onclick="alert('Hallo selamat datang !!')">Coba klik saya</a>
+
+     <!-- ini saya akan menuliskan contoh javascript eksternal -->
+
+     <p id="demo"></p>
+     <script src="kode-program.js"></script>
+
+
+     <!-- ini saya mau mencoba atribut event  -->
+     <textarea onkeyup="updateCounter(this)"></textarea>
+     <p>Panjang: <span id="counter">0</span> Karakter</p>
+     
+     <script>
+       function updateCounter(textarea) {
+         const length = textarea.value.length;
+         document.getElementById('counter').innerText = length;
+         if (length > 10) alert('Banyak teuing woyy!!');
+       }
+     </script>
+     
+    
+</body>
+</html>

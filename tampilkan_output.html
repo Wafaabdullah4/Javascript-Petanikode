@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Cara menampilkan output di Javascript</title>
+</head>
+<body>
+
+    <!-- menggunakan console.log -->
+    <p id="test-console"></p>
+    <script>
+        var nama = document.getElementById("test-console");
+        nama.innerHTML = "wafa Abdullah Nurbani Adam";
+        console.log(nama.innerHTML);
+    </script>
+
+    <!-- menggunakan alert -->
+     <button onclick="sayHello()">Klik aku</button>
+     <script>
+        function sayHello(){
+            alert("Hallo, Selamat Datang !!")
+        }
+     </script>
+
+     <!-- menggunakan document write sebenernya ini kurang disarankan juga sih -->
+      <script>
+          yourname = "Wafa Abdullah Nurbani Adam 2";
+          document.write(yourname);
+      </script>
+
+      <!-- Menggunakan InnerHtml -->
+       <p id="demo"></p>
+       <script>
+        document.getElementById('demo').innerHTML = "Heiii kamuu...";
+       </script>
+
+</body>
+</html>
