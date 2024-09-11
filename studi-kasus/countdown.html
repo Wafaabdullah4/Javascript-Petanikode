@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Mundur sederhana</title>
+</head>
+<body>
+
+  <center>
+    <h1>Hitung mundur</h1>
+    <div id="countdown" >10</div>
+    <button onclick="slbeww()">Mulai Ulang</button>
+  </center>
+
+  <script>
+
+
+
+    coundownElement = document.getElementById('countdown');
+    let interval ;
+    let count = 10;
+
+
+    function slbeww(){
+      clearInterval(interval)
+      count =10;
+      coundownElement.textContent = count;
+
+      interval =  setInterval(() =>{
+        count--;
+        if (count >= 0) {
+          coundownElement.textContent = count;
+      }
+        if(count == 0){
+          clearInterval(interval)
+          coundownElement.textContent = 'waktu seep jang';
+        }
+      } ,1000)
+     // window.location = 'traffic-lamp.html'
+    
+
+    }
+//    window.open("traffic-lamp.html", "_blank"); 
+
+window.onload = slbeww;
+
+  </script>
+  
+</body>
+</html>

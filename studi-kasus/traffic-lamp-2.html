@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi Lampu Lalu Lintas</title>
+  <style>
+    .container {
+      margin-top: 20px; 
+      border: 2px solid; 
+      width: 104px; 
+      height: 304px; 
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .lamp {
+      width: 100px; 
+      height: 100px; 
+      border: 1px solid black; 
+      border-radius: 50%; 
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <div class="container">
+    <div id="red" class="lamp"></div>
+    <div id="yellow" class="lamp"></div>
+    <div id="green" class="lamp"></div>
+  </div>
+  <br>
+  <button onclick="changeLight()">Ubah Warna</button>
+</center>
+
+<script>
+  let currentColor = 'red';
+
+  function changeLight() {
+    switch (currentColor) {
+      case 'red':
+        document.getElementById('red').style.backgroundColor = 'gray';
+        document.getElementById('yellow').style.backgroundColor = 'yellow';
+        currentColor = 'yellow';
+        break;
+      case 'yellow':
+        document.getElementById('yellow').style.backgroundColor = 'gray';
+        document.getElementById('green').style.backgroundColor = 'green';
+        currentColor = 'green';
+        break;
+      case 'green':
+        document.getElementById('green').style.backgroundColor = 'gray';
+        document.getElementById('red').style.backgroundColor = 'red';
+        currentColor = 'red';
+        break;
+    }
+  }
+</script>
+</body>
+</html>

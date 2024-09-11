@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menghitung usia berdasarkan tanggal lahir</title>
+</head>
+<body>
+  
+  <center>
+    <h6>Masukan Tanggal Lahir Anda</h6>
+    <input type="date" id="dob" value="">
+    <button onclick="hitungUsia()">Hitung Usia</button>
+    <h1 id="result"></h1>
+  </center>
+
+
+  <script>
+    const today = new Date();
+    const formattedDate = today.toISOString().split('T')[0]; // Format yyyy-mm-dd
+    document.getElementById('dob').value = formattedDate;
+    function hitungUsia(){
+      const dob = new Date(document.getElementById('dob').value);
+      console.log("🚀 ~ dob:", dob)
+      
+      const today = new Date()
+      console.log("🚀 ~ today:", today)
+      // Cek jika tanggal lahir lebih dari tanggal hari ini
+      if (dob > today) {
+        document.getElementById('result').textContent = 'Tanggal lahir tidak boleh lebih dari tanggal hari ini.';
+        return;
+      }
+
+     // Periksa apakah tanggal lahir valid
+     if (isNaN(dob.getTime())) { 
+      document.getElementById('result').textContent = 'Masukkan Tanggal Yang valid';
+      return;
+    }
+
+      // Hitung usia berdasarkan selisih tahun
+      let age = today.getFullYear() - dob.getFullYear();
+      const monthDiff = today.getMonth() - dob.getMonth();
+      const dayDiff = today.getDate() - dob.getDate();
+
+      // Jika bulan saat ini kurang dari bulan lahir atau bulan sama tetapi hari saat ini kurang dari hari lahir
+      if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--; // Kurangi usia jika tanggal lahir belum terlewati tahun ini
+      }
+
+      // Tampilkan hasil usia
+      document.getElementById('result').textContent = `Usia Anda adalah ${age} tahun ${monthDiff} bulan ${dayDiff} hari`;
+    }
+  </script>
+</body>
+</html>

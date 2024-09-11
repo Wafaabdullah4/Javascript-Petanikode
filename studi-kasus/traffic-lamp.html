@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membuat Lampu Lalu LIntas</title>
+</head>
+<body>
+<center>
+  <div class="container"  style="margin-top: 20px; border:2px solid; width:104px; height:304px; background :black">
+    <div style="width: 100px; height: 100px; border: 1px solid black; border-radius:50%; background:gray;"  id="berhenti"></div>
+    <div style="width: 100px; height: 100px; border: 1px solid black; border-radius:50%; background: gray" id="hati"></div>
+    <div style="width: 100px; height: 100px; border: 1px solid black; border-radius:50%; background: gray" id="jalan"></div>
+  </div>
+  <br>
+  <button onclick="berhenti()">BERHENTI</button>
+  <button onclick="hati()">HATI HATI</button>
+  <button onclick="Jalan()">JALAN</button>
+</center>
+
+
+<script>
+          function berhenti(){
+                  document.getElementById('berhenti').style.background = 'red';
+                  document.getElementById('hati').style.background = 'gray';
+                  document.getElementById('jalan').style.background = 'gray)';
+
+          }
+          function hati(){
+            document.getElementById('berhenti').style.background = 'gray';
+            document.getElementById('jalan').style.background = 'gray';
+            document.getElementById('hati').style.background = 'yellow';
+          }
+          function Jalan(){
+            document.getElementById('berhenti').style.background = 'gray';
+            document.getElementById('hati').style.background = 'gray';
+            document.getElementById('jalan').style.background = 'green';
+          }
+</script>
+</body>
+</html>
+
+
